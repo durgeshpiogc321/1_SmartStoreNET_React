@@ -1,0 +1,101 @@
+/// CSS Performance Optimizations and Fixes
+/// ==========================================
+
+// GPU acceleration for animations and transforms
+.accelerated {
+    transform: translateZ(0);
+    will-change: transform;
+}
+
+// Fix for common layout shift issues
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+// Performance optimizations
+* {
+    // Reduce paint complexity
+    &:focus {
+        outline: 2px solid $primary;
+        outline-offset: 2px;
+    }
+}
+
+// Fix common z-index issues using centralized variables
+.dropdown-menu {
+    z-index: $z-index-dropdown;
+}
+
+.modal {
+    z-index: $z-index-modal;
+    
+    &-backdrop {
+        z-index: $z-index-modal-backdrop;
+    }
+}
+
+.popover {
+    z-index: $z-index-popover;
+}
+
+.tooltip {
+    z-index: $z-index-tooltip;
+}
+
+// Improve scroll performance
+.scroll-container {
+    -webkit-overflow-scrolling: touch;
+    overflow-y: auto;
+}
+
+// Fix for webkit input styling
+input[type="search"] {
+    -webkit-appearance: textfield;
+    appearance: textfield;
+    
+    &::-webkit-search-cancel-button {
+        -webkit-appearance: none;
+        appearance: none;
+    }
+}
+
+// Print optimizations
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    
+    a, a:visited {
+        text-decoration: underline;
+    }
+    
+    // Hide non-essential elements
+    .no-print,
+    nav,
+    footer,
+    .sidebar {
+        display: none !important;
+    }
+}
+
+// Accessibility improvements
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+// High contrast mode support
+@media (prefers-contrast: high) {
+    .btn {
+        border: 2px solid currentColor;
+    }
+}

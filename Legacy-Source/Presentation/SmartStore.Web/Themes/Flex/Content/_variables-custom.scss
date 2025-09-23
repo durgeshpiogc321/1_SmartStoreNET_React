@@ -1,0 +1,28 @@
+// Variable overrides
+//
+// Copy variables from `_variables.scss` to this file to override default values
+// without modifying source files.
+
+// CSS Reset and Performance Improvements
+// ==============================================================
+
+// Ensure consistent box-sizing
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+// Improved font rendering
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+// Z-index management (standardize z-index values)
+$z-index-dropdown: 1000;
+$z-index-sticky: 1020;
+$z-index-fixed: 1030;
+$z-index-modal-backdrop: 1040;
+$z-index-modal: 1050;
+$z-index-popover: 1060;
+$z-index-tooltip: 1070;

@@ -1,0 +1,106 @@
+/// CSS Utility Classes for Common Issues
+/// =====================================
+
+// Layout utilities
+.u-clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.u-visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+// Prevent layout shift
+.u-aspect-ratio-16-9 {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    
+    > * {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.u-aspect-ratio-4-3 {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 75%;
+    
+    > * {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+// Text utilities
+.u-text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.u-text-break {
+    word-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+}
+
+// Focus utilities
+.u-focus-visible:focus-visible {
+    outline: 2px solid $primary;
+    outline-offset: 2px;
+}
+
+// Performance utilities
+.u-will-change-transform {
+    will-change: transform;
+}
+
+.u-will-change-scroll {
+    will-change: scroll-position;
+}
+
+// Responsive utilities
+@include media-breakpoint-down(sm) {
+    .u-hide-mobile {
+        display: none !important;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .u-hide-desktop {
+        display: none !important;
+    }
+}
+
+// Print utilities
+@media print {
+    .u-print-hidden {
+        display: none !important;
+    }
+    
+    .u-print-visible {
+        display: block !important;
+    }
+}

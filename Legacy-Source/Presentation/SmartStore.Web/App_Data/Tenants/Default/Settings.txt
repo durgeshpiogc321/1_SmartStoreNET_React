@@ -1,0 +1,3 @@
+AppVersion: 4.2.0.0
+DataProvider: sqlserver
+DataConnectionString: Data Source=PIO-LAP-624;Initial Catalog=db_react_22_09_1;Integrated Security=False;Persist Security Info=False;User ID=sa;Password=Test@123;Enlist=False;Pooling=True;Min Pool Size=1;Max Pool Size=100;Connect Timeout=15;User Instance=False

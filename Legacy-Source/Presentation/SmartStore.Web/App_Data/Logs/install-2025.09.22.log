@@ -1,0 +1,42 @@
+2025-09-22 14:07:11,789 - INFO Checking requirements
+2025-09-22 14:07:30,169 - INFO Building database
+2025-09-22 14:07:45,236 - DEBUG Populate: PopulatePictures
+2025-09-22 14:07:45,470 - DEBUG Populate: PopulateCurrencies
+2025-09-22 14:07:45,580 - DEBUG Populate: PopulateStores
+2025-09-22 14:07:45,867 - DEBUG Populate: InstallLanguages
+2025-09-22 14:07:45,899 - DEBUG Populate: PopulateMeasureDimensions
+2025-09-22 14:07:45,943 - DEBUG Populate: PopulateMeasureWeights
+2025-09-22 14:07:45,971 - DEBUG Populate: PopulateTaxCategories
+2025-09-22 14:07:46,101 - DEBUG Populate: PopulateCountriesAndStates
+2025-09-22 14:07:46,516 - DEBUG Populate: PopulateShippingMethods
+2025-09-22 14:07:46,548 - DEBUG Populate: PopulateDeliveryTimes
+2025-09-22 14:07:46,596 - DEBUG Populate: PopulateQuantityUnits
+2025-09-22 14:07:46,637 - DEBUG Populate: PopulateCustomersAndUsers
+2025-09-22 14:07:46,844 - DEBUG Populate: PopulateEmailAccounts
+2025-09-22 14:07:46,877 - DEBUG Populate: PopulateMessageTemplates
+2025-09-22 14:07:47,033 - DEBUG Populate: PopulateTopics
+2025-09-22 14:07:47,330 - DEBUG Populate: PopulateSettings
+2025-09-22 14:07:48,763 - DEBUG Populate: PopulateActivityLogTypes
+2025-09-22 14:07:48,817 - DEBUG Populate: PopulateCustomersAndUsers
+2025-09-22 14:07:49,014 - DEBUG Populate: PopulateProductTemplates
+2025-09-22 14:07:49,038 - DEBUG Populate: PopulateCategoryTemplates
+2025-09-22 14:07:49,070 - DEBUG Populate: PopulateManufacturerTemplates
+2025-09-22 14:07:49,086 - DEBUG Populate: PopulateScheduleTasks
+2025-09-22 14:07:49,147 - DEBUG Populate: PopulateLocaleResources
+2025-09-22 14:07:54,951 - DEBUG Populate: PopulateMenus
+2025-09-22 14:07:55,195 - DEBUG Populate: MovePictures
+2025-09-22 14:07:57,058 - INFO Installing plugin 'Google Analytics'.
+2025-09-22 14:07:58,200 - INFO Installing plugin 'Smartstore Developer Tools (MiniProfiler and other goodies)'.
+2025-09-22 14:07:58,343 - INFO Installing plugin 'Google Merchant Center (GMC) feed'.
+2025-09-22 14:07:58,499 - INFO Installing plugin 'Clickatell SMS Provider'.
+2025-09-22 14:07:58,610 - INFO Installing plugin 'Offline Payment Methods'.
+2025-09-22 14:08:00,102 - INFO Installing plugin 'Login and Pay with Amazon'.
+2025-09-22 14:08:01,174 - INFO Installing plugin 'PayPal'.
+2025-09-22 14:08:01,205 - INFO Installing plugin 'Facebook Login'.
+2025-09-22 14:08:01,293 - INFO Installing plugin 'Shipping'.
+2025-09-22 14:08:01,514 - INFO Plugin installed: SystemName: SmartStore.Shipping, Version: 4.2.0, Description: 'Shipping'
+2025-09-22 14:08:01,555 - INFO Installing plugin 'Shipping by weight'.
+2025-09-22 14:08:01,659 - INFO Installing plugin 'Default Tax Providers'.
+2025-09-22 14:08:01,736 - INFO Processing media files
+2025-09-22 14:08:03,124 - INFO Finalizing installation
+2025-09-22 14:08:03,140 - INFO Installation completed successfully
