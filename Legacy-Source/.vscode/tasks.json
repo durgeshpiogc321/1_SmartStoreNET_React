@@ -1,0 +1,14 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build SmartStoreNET Solution",
+			"type": "shell",
+			"command": "dotnet build SmartStoreNET.sln --configuration Debug",
+			"problemMatcher": [
+				"$msCompile"
+			],
+			"group": "build"
+		}
+	]
+}
