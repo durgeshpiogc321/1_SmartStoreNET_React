@@ -70,6 +70,76 @@
 
 ---
 
+### Question 6: AI-Generated Code Testing
+**Q:** When AI generates a complete method or class for you, what's the first thing you do before using it in your project?
+
+**Expected Answer:**
+"First, I read through the code to understand what it does. Then I check if it compiles and follows our coding standards. Most importantly, I write unit tests to verify it works correctly with different inputs, including edge cases. I also check for security issues like SQL injection vulnerabilities or missing input validation. Only after testing and reviewing do I integrate it into the codebase."
+
+**Evaluation Criteria:**
+- ✅ Emphasizes code review
+- ✅ Mentions testing approach
+- ✅ Security awareness
+- ✅ Doesn't blindly trust AI output
+
+---
+
+### Question 7: Debugging AI Code
+**Q:** Have you ever had AI-generated code that compiled but didn't work correctly? How did you debug it?
+
+**Expected Answer:**
+"Yes, this happens often. AI might generate syntactically correct code that has logical errors. For example, I once had Copilot generate an async method that caused a deadlock because it used .Result instead of await. I debugged it by setting breakpoints in Visual Studio, stepping through the code, and examining variable values. Once I identified the issue, I fixed it and learned to watch for that specific pattern in future AI suggestions."
+
+**Evaluation Criteria:**
+- ✅ Acknowledges AI limitations
+- ✅ Shows debugging skills
+- ✅ Provides concrete example
+- ✅ Demonstrates learning from experience
+
+---
+
+### Question 8: AI Tool Selection
+**Q:** If you had to choose only ONE AI coding tool for your daily .NET work, which would it be and why?
+
+**Expected Answer:**
+"I'd choose GitHub Copilot because it integrates directly into Visual Studio where I do most of my .NET development. It provides real-time code suggestions as I type, helps with boilerplate code, and understands C# patterns well. While Cursor has powerful features, the seamless integration with my existing IDE makes Copilot more practical for day-to-day work. However, I'd keep Cursor available for complex refactoring tasks that require more context."
+
+**Evaluation Criteria:**
+- ✅ Makes a clear choice with reasoning
+- ✅ Considers workflow integration
+- ✅ Shows practical thinking
+- ✅ Acknowledges trade-offs
+
+---
+
+### Question 9: AI and Learning
+**Q:** Do you think using AI tools makes you a better or worse developer? Why?
+
+**Expected Answer:**
+"It makes me a better developer when used correctly. AI handles repetitive tasks, letting me focus on architecture and problem-solving. It also exposes me to different coding patterns and approaches I might not have considered. However, there's a risk - if junior developers rely too heavily on AI without understanding the fundamentals, it could hinder their growth. The key is to use AI as a learning tool and productivity booster, not as a crutch that prevents you from learning core concepts."
+
+**Evaluation Criteria:**
+- ✅ Balanced perspective
+- ✅ Identifies both benefits and risks
+- ✅ Shows self-awareness
+- ✅ Emphasizes importance of fundamentals
+
+---
+
+### Question 10: AI Code Suggestions
+**Q:** When Copilot suggests code, do you usually accept it immediately, modify it, or reject it? What determines your decision?
+
+**Expected Answer:**
+"It depends on the context. For simple, repetitive code like DTOs or basic CRUD operations, I often accept suggestions after a quick review. For complex business logic or security-sensitive code, I carefully review and often modify or reject suggestions. I always check if the suggestion follows our project's patterns, uses the correct framework version, and handles errors properly. If it's close but not perfect, I accept it and then refactor. The decision is based on code complexity, security implications, and how well it matches our architecture."
+
+**Evaluation Criteria:**
+- ✅ Context-aware decision making
+- ✅ Explains review criteria
+- ✅ Shows quality consciousness
+- ✅ Practical and thoughtful approach
+
+---
+
 ## LONG QUESTIONS (Deep Dive - 5-7 minutes each)
 
 ### Question 1: AI-Assisted Development Workflow
